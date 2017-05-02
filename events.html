@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Car events</title> <!--title for the page-->
+	<link rel="stylesheet" href="css.css"> <!--Connects to css file-->
+	<link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon"> <!-- favicon -->
+	<link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+	<style>
+			h1 {
+				margin-top: 20px;
+				text-align: center;
+				font-family: tahoma;
+				font-weight: lighter;
+				text-decoration: underline;
+				color: #000;
+				font-size: 20px;
+				text-shadow: 4px 4px 4px red;
+			}
+			h3 {
+				text-align: center;
+				font-family: tahoma;
+				font-weight: lighter;
+				color: red;
+			}
+	
+			p {
+				font-family: tahoma;
+				font-size: 14px;
+				text-align: center;
+			}
+			.innerContent a {
+				font-family: tahoma;
+				font-size: 12px;
+			}
+
+			/* MEDIA QUERIES - controlling the event content */
+			@media only screen and (max-width : 480px) {
+		 	.box {
+				width: 100%;
+				padding-bottom: 100%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 10px;
+			}
+			p {
+				font-size: 18px;
+			}
+			a.info {
+				font-size: 16px;
+			}
+		}
+			@media only screen and (max-width : 650px) and (min-width : 481px) {
+		 	.box {
+				width: 50%;
+				padding-bottom: 50%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 10px;
+			}
+		}
+			@media only screen and (max-width : 1050px) and (min-width : 651px) {
+		 	.box {
+				width: 33.3%;
+				padding-bottom: 33.3%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 10px;
+			}
+		}
+			@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+		 	.box {
+				width: 25%;
+				padding-bottom: 25%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 12px;
+			}
+		}
+			@media only screen and (max-width : 1052px) and (min-width : 1680px) {
+		 	.box {
+				width: 25%;
+				padding-bottom: 25%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+<!-- start of nav -->
+	<nav>
+		<ul>
+		<a class="logohome" href="index.html">
+			<div class="logo">
+				<img src="IMG/logo1.png" alt="logo" width="150" height="50" align="left">
+			</div>
+		</a>
+	  		<i><li><a href="index.html"><span><img src="IMG/home.png" alt="icon" style="width:13px;height:13px;"/></span></a></li>
+	  		<li><a href="gallery.html">GALLERY</a></li>
+	  		<li><a class="active" href="events.html">CAR EVENTS</a></li></i>
+		</ul>	
+	</nav>
+<!-- end of nav -->	
+<!-- image under nav bar -->
+	<header>
+		<img src="IMG/speed.jpg" alt="image" width="100%" height="450" border="0">
+	</header>
+	<h1>UPCOMING EVENTS</H1>
+<!-- event details here -->
+	<section>
+		<div id="events">
+			<div class="box">
+				<div class="innerContent">
+					<h3>North Coast 500</h3><br>
+					<p>17/09/2017-20/09/2017</p> 
+					<a class="info" href="eventdeets.html">Click for more info</a>
+	 			</div>
+			</div>
+			<div class="box">
+				<div class="innerContent">
+					<h3>BBQ Bash</h3><br>
+					<p>Early July 2017.</p>
+					<a class="info" href="eventdeets1.html">Click for more info</a>
+	 			</div>
+			</div>
+			<div class="box">
+				<div class="innerContent">
+					<h3>Manchester Meet</h3><br>
+					<p>23/06/2017</p> 
+					<a class="info" href="eventdeets2.html">Click for more info</a>
+	 			</div>
+			</div>
+			<div class="box">
+				<div class="innerContent">
+					<h3>Santa Pod Strip</h3><br>
+					<p>14/05/2017</p> 
+					<a class="info" href="eventdeets3.html">Click for more info</a>
+	 			</div>
+			</div>
+		</div>
+	</section>
+<!-- end of section -->
+<!-- footer -->
+	<div id="container3">
+<!-- social link at bottom of page in the top of footer -->
+		<div id="social"><a href="https://www.instagram.com/univers3al/" target="_blank"><img src="IMG/gram.svg" alt="instagram" width="50" height="50"/></a><hr>
+			<p class="footertext">&copy; 2017 RS3 website by Gabriella Willis - All images are either creative commons or provided by client.</p>
+			<div class="footernav">
+			<ul>
+				<li><h5>Quick Links</h5></li>
+				<li><a href="events.html">Car Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="add.html">Submit Event</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- end of footer --> 
+<!-- end of body -->
+</body>
+</html>

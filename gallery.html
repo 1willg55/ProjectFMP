@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title> <!--title for the page-->
+	<link rel="stylesheet" href="css.css"> <!--Connects to css file-->
+	<link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon"> <!-- favicon -->
+	<link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+	<style> 
+			/* MEDIA QUERIES */
+			@media only screen and (max-width : 480px) {
+		 	.box {
+				width: 100%;
+				padding-bottom: 100%;
+		 	}
+		 	#gallery {
+		 		font-size: 12px;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 10px;
+			}
+		}
+			@media only screen and (max-width : 650px) and (min-width : 481px) {
+		 	.box {
+				width: 50%;
+				padding-bottom: 50%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 10px;
+			}
+		}
+			@media only screen and (max-width : 1050px) and (min-width : 651px) {
+		 	.box {
+				width: 33.3%;
+				padding-bottom: 33.3%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 10px;
+			}
+		}
+			@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+		 	.box {
+				width: 25%;
+				padding-bottom: 25%;
+		 	}
+		 	.footertext {
+    			text-align: center;
+    			color: #EBEEEB;
+    			font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+<!-- start of nav -->
+	<nav>
+		<ul>
+		<a class="logohome" href="index.html">
+			<div class="logo">
+				<img src="IMG/logo1.png" alt="logo" width="150" height="50" align="left">
+			</div>
+		</a>
+	  		<i><li><a href="index.html"><span><img src="IMG/home.png" alt="icon" style="width:13px;height:13px;"/></span></a></li>
+	  		<li><a class="active" href="gallery.html">GALLERY</a></li>
+	  		<li><a href="events.html">CAR EVENTS</a></li></i>
+		</ul>	
+	</nav>
+<!-- end of nav -->	
+<!-- header at top of page, under the navigation -->
+<header class="gallery">
+	<h1>GALLERY</h1>
+</header>
+<!--  The wrapper ID is the box that is around the whole content. This contains all the images for this page. -->
+<section>
+	<div class="wrapper">
+		<div class="box">
+			<div class="innerContent">
+				<img src="IMG/car21.JPG" width="100%" height="100%" alt="Blue RS3"> 
+ 			</div>
+		</div>
+		<div class="box">
+ 			<div class="innerContent">
+				<img src="IMG/car22.jpg" width="100%" height="100%" alt="image24">
+ 			</div>
+		</div> 
+		<div class="box">
+ 			<div class="innerContent">
+				<img src="IMG/car7.jpg" width="100%" height="100%" alt="image24">
+ 			</div>
+		</div> 
+		<div class="box">
+ 			<div class="innerContent">
+				<img src="IMG/car8.jpg" width="100%" height="100%" alt="image24">
+ 			</div>
+		</div> 
+		<div class="box">
+ 			<div class="innerContent">
+				<img src="IMG/car9.jpg" width="100%" height="100%" alt="image24">
+ 			</div>
+		</div> 
+		<div class="box">
+ 			<div class="innerContent">
+				<img src="IMG/car26.jpg" width="100%" height="100%" alt="image24">
+ 			</div>
+		</div> 
+		<div class="box">
+ 			<div class="innerContent">
+				<img src="IMG/car11.jpg" width="100%" height="100%" alt="image24">
+ 			</div>
+		</div> 
+		<div class="box">
+ 			<div class="innerContent">
+				<img src="IMG/car12.jpg" width="100%" height="100%" alt="image24">
+ 			</div>
+		</div>  
+	</div> 
+</section>
+<!-- End of this section -->
+<!-- pagination at bottom of images -->
+<div class="center">
+	<div class="pagination">
+  		<a href="#" class="active">1</a>
+  		<a href="gallery2.html">2</a>
+  		<a href="gallery2.html">&raquo;</a>
+	</div>
+</div>
+<!-- end of pagination -->
+<!-- top scroll button -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 2000px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- end of scroll button script -->
+<!-- footer -->
+<div id="container3">
+	<div id="social"><a href="https://www.instagram.com/univers3al/" target="_blank"><img src="IMG/gram.svg" alt="instagram" width="50" height="50"/></a><hr>
+		<p class="footertext">&copy; 2017 RS3 website by Gabriella Willis - All images are either creative commons or provided by client.</p>
+		<div class="footernav">
+			<ul>
+				<li><h5>Quick Links</h5></li>
+				<li><a href="events.html">Car Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="add.html">Submit Event</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end of footer --> 
+<!-- end of body -->
+</body>
+</html>

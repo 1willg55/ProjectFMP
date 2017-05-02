@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RS3 Addicts</title> <!--title for the page-->
+	<link rel="stylesheet" href="css.css"> <!--Connects to css file-->
+	<link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon"> <!-- favicon -->
+	<link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+	<script language="JavaScript1.2">
+
+var howOften = 5; //number often in seconds to rotate
+var current = 0; //start the counter at 0
+var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+// images in the array here
+var items = new Array();
+    items[0]="<img alt='image0' src='IMG/road3.jpg' height='500' width='100%' border='0' />"; //a linked image
+    items[1]="<img alt='image1' src='IMG/rings.jpg' height='500' width='100%' border='0' />"; //a linked image
+
+    
+function rotater() {
+    document.getElementById("placeholder").innerHTML = items[current];
+    current = (current==items.length-1) ? 0 : current + 1;
+    setTimeout("rotater()",howOften*1000);
+}
+
+function rotater() {
+    if(document.layers) {
+        document.placeholderlayer.document.write(items[current]);
+        document.placeholderlayer.document.close();
+    }
+    if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+        if(document.all)
+            placeholderdiv.innerHTML=items[current];
+
+    current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+    setTimeout("rotater()",howOften*1000);
+}
+window.onload=rotater;
+	</script>
+			<!-- This is the CSS for the index.html page -->
+		<style> 
+			.wholebox {
+				margin-left: auto;
+				margin-right: auto;
+				width: 1080px;
+				border: 1px solid #E7E3E3;
+				box-shadow: 10px 10px 5px #888888;
+				margin-top: 150px;
+				margin-bottom: 90px;
+				background-color: #fff;				
+			}
+			h1 {
+				font-family: tahoma;
+				text-align: center;
+				font-weight: lighter;
+				text-decoration: underline;
+			}
+			.text {
+				width: 1060px;
+				line-height: 30px;
+				margin: 0px;
+				background-color: #fff;
+			}
+			p {
+				text-align: justify;
+				font-family: arial;
+				font-size: 20px;
+				margin: 40px;
+				padding: 0;
+			}
+
+			/* MEDIA QUERIES */
+			
+			@media all and (max-width : 58em) {
+				.wholebox {
+					width: 816px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.text {
+					width: 800px;
+					margin: 10px;
+				}
+				p {
+					text-align: justify;
+					font-family: tahoma;
+					font-size: 16px;
+				}
+			}
+			
+			@media all and (max-width : 52em) {
+				.wholebox {
+					width: 665px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.text {
+					width: 650px;
+					margin: 10px;
+				}
+				p {
+					text-align: justify;
+					font-family: tahoma;
+					font-size: 16px;
+				}
+			}
+			
+			@media all and (max-width : 42em) {
+				.wholebox {
+					width: 500px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.footertext {
+    				text-align: center;
+    				color: #EBEEEB;
+    				font-size: 10px;
+				}
+				.text {
+					width: 480px;
+					margin: 10px;
+				}
+				p {
+					font-size: 14px;
+				}
+				#placeholderdiv img {
+					height: 200px;
+				}
+			}
+			
+			@media all and (max-width : 32em) {
+				.wholebox {
+					width: 415px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 180px;
+				}
+				.footertext {
+    				text-align: center;
+    				color: #EBEEEB;
+    				font-size: 10px;
+				}
+				.text {
+					width: 400px;
+					margin: 10px;
+					line-height: 15px;
+				}
+				h1 {
+					text-align: center;
+					font-size: 20px;
+				}
+				p {
+					font-size: 12px;
+				}
+				#container1 {
+					width: 100%;
+				}
+				#container2 {
+					width: 100%;
+					padding-top: 0;
+				}
+				ul {
+				    list-style-type: none;
+				    margin: 0;
+				    padding: 0;
+				    overflow: hidden;
+				    background-color: #978A8A;
+				    top: 0;
+				    left: 0;
+				    width: 100%;
+				}
+
+				li {
+				    float: right;
+				    border-right: 1px solid #bbb;
+				}
+
+				li a {
+				    display: block;
+				    color: white;
+				    font-size: 12px;
+				    font-family: tahoma;
+				    text-align: center;
+				    padding: 10px 15px;
+				    padding-bottom: 25px;
+				    text-decoration: none;   
+				}
+			}
+			
+			@media all and (max-width : 26em) {
+				.wholebox {
+					width: 315px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.footertext {
+    				text-align: center;
+    				color: #EBEEEB;
+    				font-size: 10px;
+				}
+				.text {
+					width: 300px;
+					margin: 10px;
+					line-height: 15px;
+				}
+				h1 {
+					text-align: center;
+					font-size: 18px;
+				}
+				#container1 {
+					width: 100%;
+				}
+				#container2 {
+					width: 100%;
+					padding-top: 0;
+				}
+			}
+			
+			@media all and (max-width : 20em) {
+				.wholebox {
+					width: 250px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.text {
+					width: 200px;
+					margin: 10px;
+					line-height: 15px;
+				}
+				p {
+					font-size: 12px;
+				}
+				h1 {
+					text-align: center;
+					font-size: 16px;
+				}
+				#container1 {
+					width: 100%;
+				}
+				#container2 {
+					width: 100%;
+					padding-top: 0;
+				}
+			}
+		</style>
+</head>
+<body>
+<!-- start of nav -->
+	<nav>		
+			<ul>
+			<div class="logo">
+				<img src="IMG/logo1.png" alt="logo" width="150" height="50" align="left">
+			</div>
+		  		<i><li><a class="active" href="index.html"><span><img class="homeicon" src="IMG/home.png" alt="icon" style="width:13px;height:13px;"/></span></a></li>
+		  		<li><a href="gallery.html">GALLERY</a></li>
+		  		<li><a href="events.html">CAR EVENTS</a></li></i>		 
+			</ul>		
+	</nav>
+<!-- end of nav -->
+<!-- this is the code for the img on index.html. JS is in the <head> tag -->
+		<layer id="placeholderlayer"></layer>
+			<div id="placeholderdiv"></div>
+<!-- end -->
+<!-- these are the two links under the image on index.html page that go to other pages -->
+			<div id="container1">
+				<a href="gallery.html" class="button button1">GALLERY</a>
+			</div>
+		<div id="container2">
+			<a href="events.html" class="button button1">EVENTS</a>
+		</div>
+<!-- end -->
+<!-- This is all the content on the page. The wholebox class is the box that is around the whole content. -->
+		<div class="wholebox">
+<!-- this is the opening message on index.html page -->
+			<section class="text">
+<!-- heading -->
+				<h1>Welcome to RS3 Addicts</h1>
+<!-- some text -->
+					<p>Audi RS3 Owners - REAL content from REAL owners! Message us on Instagram for adding
+						to the Official WhatsApp RS3 Owners Group. Please find link to social media site via the 
+						icon at the footer of each page. On this site you can expect to find upcoming events and
+						images taken by the owners themselves. As well as that, you can submit an event to the submit
+						form.
+					</p>
+			</section>
+<!-- end of section -->
+			</div>
+<!-- End of wholebox class -->	
+<!-- footer -->
+<div id="container3">
+<!-- social link at bottom of page in the top of footer -->
+	<div id="social"><a href="https://www.instagram.com/univers3al/" target="_blank"><img src="IMG/gram.svg" alt="instagram" width="50" height="50"/></a><hr>
+		<p class="footertext">&copy; 2017 RS3 website by Gabriella Willis - All images are either creative commons or provided by client.</p>
+		<div class="footernav">
+			<ul>
+				<li><h5>Quick Links</h5></li>
+				<li><a href="events.html">Car Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="add.html">Submit Event</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end of footer --> 
+<!-- end of body -->
+</body>
+</html>

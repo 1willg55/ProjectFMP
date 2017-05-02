@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Event details</title> <!--title for the page-->
+	<link rel="stylesheet" href="css.css"> <!--Connects to css file-->
+	<link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon"> <!-- favicon -->
+	<link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".togglehide").toggle();
+    });
+});
+</script>
+	<style>
+			.togglehide {
+				display: none;
+			}
+			h1 {
+				font-family: tahoma;
+				text-align: left;
+				padding-left: 10px;
+				font-weight: lighter;
+			}
+			p {
+				text-align: justify;
+				font-family: arial;
+				font-size: 14px;
+				line-height: 150%;
+				margin: 0;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-bottom: 50px;
+			}
+			hr { 
+			    display: block;
+				margin: 10px;
+			} 
+			h6 {
+				font-family: arial;
+				font-size: 20px;
+				font-weight: lighter;
+				text-align: center;
+			}
+			h4 {
+				font-family: tahoma;
+				font-size: 16px;
+				margin-left: 10px;
+			}
+	</style>
+</head>
+<body>
+<!-- start of nav -->
+	<nav>
+		<ul>
+		<a class="logohome" href="index.html">
+			<div class="logo">
+				<img src="IMG/logo1.png" alt="logo" width="150" height="50" align="left">
+			</div>
+		</a>
+	  		<i><li><a href="index.html"><span><img src="IMG/home.png" alt="icon" style="width:13px;height:13px;"/></span></a></li>
+	  		<li><a href="gallery.html">GALLERY</a></li>
+	  		<li><a href="events.html">CAR EVENTS</a></li></i>
+		</ul>	
+	</nav>
+<!-- end of nav -->	
+<!-- Active map at top of page - this shows the location of the event -->
+<div id="map" style="width:100%;height:300px;background:yellow"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(52.2363,-0.6089);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 10};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  // Zoom to 9 when clicking on marker
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(9);
+    map.setCenter(marker.getPosition());
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgXlfRSJ8k2rQweARNUCR8Cwg6tIcyL9g&callback=myMap"></script>
+<!-- end of map -->
+<!-- The 'back' button -->
+<div class="topcorner"><a href="events.html"><img src="IMG/back.svg" alt="goback" width="30" height="30"/></a></div>
+<!-- side section with quick links to other events -->
+<section class="upcoming">
+	<h4>Upcoming events</h4>
+		<a class="upcominglinks" href="eventdeets1.html">BBQ Bash</a></br></br>
+		<a class="upcominglinks" href="eventdeets2.html">Manchester Meet</a></br></br>
+		<a class="upcominglinks" href="eventdeets.html">NC500 Drive Event</a>
+</section>
+<!-- end -->
+<!-- beginning of class -->
+		<div class="locationbox">
+<!-- this is the event details -->
+			<section class="text">
+<!-- heading -->
+				<h1>SANTA POD - Run What Ya Brung</h1><hr style="height:1px;border:none;color:#DFE0E1;background-color:#DFE0E1;">
+					<div id="location">
+						<img src="IMG/location.svg" alt="location" width="30" height="30" align="left">
+						<h6>WELLINGBOROUGH</h6><hr style="height:1px;border:none;color:#DFE0E1;background-color:#DFE0E1;">
+					</div>
+					<p>Santa Pod Raceway in Northamptonshire offers the cheapest and most accessible public track time in the UK.
+						Plenty of the cars will be there ready to fly don the santa pod strip. From stock to tuned,
+						will there be that famous '10 Second Car'. Any and all cars welcome. 14th May 2017.
+					</p><hr style="height:1px;border:none;color:#DFE0E1;background-color:#DFE0E1;">
+				<button class="accept">Accept Event</button>
+				<p class="togglehide"><b>You are going to this event!</b></p>
+			</section>
+<!-- end of section -->
+		</div>
+<!-- End of locationbox class -->	
+<!-- beginning of class -->
+		<div class="discussion">
+			<h4><b>0 Comments</b></h4><hr>
+			<h4>Make a comment about this event:</h4>
+			<textarea class="textarea" rows="8" cols="50">Say something about this event...</textarea></br>  		
+			<button class="submitbtn" type="submit" value="Submit">Submit</button>                                 
+		</div>
+<!-- End of discussion class -->
+<!-- footer -->
+<div id="container3">
+	<div id="social"><a href="https://www.instagram.com/univers3al/" target="_blank"><img src="IMG/gram.svg" alt="instagram" width="50" height="50"/></a><hr>
+		<p class="footertext">&copy; 2017 RS3 website by Gabriella Willis - All images are either creative commons or provided by client.</p>
+		<div class="footernav">
+			<ul>
+				<li><h5>Quick Links</h5></li>
+				<li><a href="events.html">Car Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="add.html">Submit Event</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end of footer --> 
+<!-- end of body -->
+<script id="dsq-count-scr" src="//rs3-addicts.disqus.com/count.js" async></script>
+</body>
+</html>

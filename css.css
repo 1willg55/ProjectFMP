@@ -1,0 +1,495 @@
+/* the background colour for whole body */
+body {
+    background-color: #F8F6F6;
+    margin: 0;
+}
+/* style for the navigation links */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #978A8A;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+li {
+    float: right;
+    border-right: 1px solid #bbb;
+}
+li a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    font-family: tahoma;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;   
+}
+/* style when user is on certain page */
+li a.active {
+background-color: #f44336;
+    color: #000;
+    text-decoration: underline;
+}
+li a:hover:not(.active) {
+    background-color: #f44336;
+    transition: background 0.5s ease-in-out;
+    color: black;
+}
+li:first-child {
+    border-right: none;
+}  
+/* style for all <p> tags */
+p {
+font-size: 30px;
+color: black;
+}
+/* this is the style for the img on the index page */
+#placeholderdiv {
+margin-top: 0.5px;
+opacity: 0.9;
+}
+/* the two buttons on the index page */
+#container1 {
+width: 50%;
+float: left;
+text-align: center;
+    padding-top: 20px;
+}
+#container2 {
+width: 49%;
+float: right;
+text-align: center;
+    padding-top: 20px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+/* the box around the gallery images */
+.wrapper {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+/* style for the button */
+.button {
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid #f44336;
+    color: black;
+    float: middle;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: tahoma;
+    margin: 4px 2px;
+    width: 50%;
+    height: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+.button1:hover {
+    background-color: #f44336;
+    color: white;
+}
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+/* the style for the footer box */
+#container3 {
+    width: 100%;
+    min-height: 100%;
+    background-color: #978A8A;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+/* footer style */
+.footertext {
+    text-align: center;
+    color: #EBEEEB;
+    font-size: 12px;
+    font-family: tahoma;
+}
+#social {
+    text-align: center;
+    padding-top: 10px;
+}
+/* style for pagination on gallery.html and gallery1.html page */
+.pagination {
+    display: inline-block;
+    padding-bottom: 70px;
+    padding-top: 40px;
+}
+.pagination a:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.pagination a:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.pagination a {
+    color: white;
+    font-family: tahoma;
+    background-color: #978A8A;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+.pagination a.active {
+    background-color: #f44336;
+    color: black;
+    border: 1px solid #f44336;
+}
+.pagination a:hover:not(.active) {
+    background-color: #f44336;
+    color: #000;
+}
+.center {
+    text-align: center;
+}
+/* the style for the text box on the event details pages */
+.text {
+    width: 100%;
+    line-height: 30px;
+    margin: 0px;
+    background-color: #fff;
+}
+h5 {
+    font-family: arial;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+.locationbox {
+    margin-left: 10px;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid #E7E3E3;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;             
+}
+.upcoming {
+    margin-right: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    float: right;
+    width: 30%;
+    border: 1px solid #E7E3E3;
+    margin-top: 30px;   
+    background-color: #fff;             
+}
+.accept {
+    border: 1px solid red;
+    background-color: white;
+    font-family: tahoma;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.discussion {
+    margin-left: 10px;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid #E7E3E3;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    background-color: #fff;             
+}
+.logohome {
+    padding-left: 0;
+}
+.topcorner{
+   position:absolute;
+   top:400px;
+   border: 1px solid #F8F6F6;
+   background-color: #F8F6F6;
+   right: 10px;
+}
+.gallery {
+    text-align: center;
+    font-size: 16px;
+    font-family: tahoma;
+    color: #000;
+    text-decoration: underline;
+    text-shadow: 4px 4px 4px red;
+}
+.footernav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #978A8A;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.footernav li {
+    float: none;
+    border-right: none;
+}
+.footernav li a {
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-family: tahoma;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;   
+}
+.footernav li a.active {
+    background-color: none;
+    color: #000;
+    text-decoration: underline;
+}
+.footernav li a:hover:not(.active) {
+    background-color: #978A8A;
+    color: black;
+}
+#events {
+    overflow: hidden;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    text-align: center;
+}
+.box {
+    width: 20%;
+    padding-bottom: 10px; 
+    margin-left: 0;
+    color: #FFF;
+    position: relative;
+    float: left;
+}
+.innerContent {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 1px;
+    bottom: 20px;
+    background-color: none;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+}
+.submitbtn {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: tahoma;
+    font-size: 12px;
+    border: 1px solid red;
+    background-color: white;
+}
+a.upcominglinks {
+    font-family: tahoma;
+    margin-left: 10px;
+}
+.textarea {
+    margin: 10px;
+    width: 80%;
+    border: 1px dotted black;
+    font-family: tahoma;
+    font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+@media all and (max-width : 62em) {
+    .locationbox {
+        width: 75%;
+        margin:0;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;               
+}
+.discussion {
+    width: 75%;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.upcoming {
+    display: none;           
+}
+h1 {
+    font-size: 18px;
+}
+p {
+    text-align: justify;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;                
+}
+h6 {
+    font-family: arial;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    }
+}
+@media all and (max-width : 58em) {
+                header img {
+                    width: 100%;
+                    height: 350px;
+                }
+            }       
+@media all and (max-width : 52em) {
+                .locationbox {
+                    width: 100%;
+                    margin:0;
+                    margin-top: 30px;
+                    margin-bottom: 20px;               
+                }
+                .discussion {
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+                h1 {
+                    font-size: 18px;
+                }
+                p {
+                    text-align: justify;
+                    font-family: arial;
+                    font-size: 12px;
+                    line-height: 150%;
+                    margin: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 50px;
+                }
+                h6 {
+                    font-family: arial;
+                    font-size: 14px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+                header img {
+                    width: 100%;
+                    height: 250px;
+                }
+                .topcorner{
+                   position:absolute;
+                   top:400px;
+                   border: 1px solid #fff;
+                   background-color: #fff;
+                   right: 10px;
+                }
+        
+            }
+@media all and (max-width : 42em) {
+                header img {
+                    width: 100%;
+                    height: 250px;
+                }
+                .topcorner{
+                   position:absolute;
+                   top:400px;
+                   border: 1px solid #fff;
+                   background-color: #fff;
+                   right: 10px;
+                }
+            }
+@media all and (max-width : 32em) {
+                header img {
+                    display: none;
+                }
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #978A8A;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                }
+
+                li {
+                    float: right;
+                    border-right: 1px solid #bbb;
+                }
+
+                li a {
+                    display: block;
+                    color: white;
+                    font-size: 12px;
+                    font-family: tahoma;
+                    text-align: center;
+                    padding: 10px 15px;
+                    padding-bottom: 25px;
+                    text-decoration: none;   
+                }
+                .locationbox {
+                    width: 100%;
+                    margin:0;
+                    margin-top: 30px;
+                    margin-bottom: 20px;               
+                }
+                .discussion {
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+                h1 {
+                    font-size: 18px;
+                }
+                p {
+                    text-align: justify;
+                    font-family: arial;
+                    font-size: 12px;
+                    line-height: 150%;
+                    margin: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 50px;
+                }
+                h6 {
+                    font-family: arial;
+                    font-size: 14px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+                .topcorner{
+                   position:absolute;
+                   top:400px;
+                   border: 1px solid #fff;
+                   background-color: #fff;
+                   right: 10px;
+                }
+            }
