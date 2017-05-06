@@ -22,7 +22,7 @@ li a {
     display: block;
     color: white;
     font-size: 15px;
-    font-family: tahoma;
+    font-family: Tahoma;
     text-align: center;
     padding: 20px 30px;
     text-decoration: none;   
@@ -98,7 +98,7 @@ text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    font-family: tahoma;
+    font-family: Tahoma;
     margin: 4px 2px;
     width: 50%;
     height: 20px;
@@ -135,7 +135,7 @@ text-align: center;
     text-align: center;
     color: #EBEEEB;
     font-size: 12px;
-    font-family: tahoma;
+    font-family: Tahoma;
 }
 #social {
     text-align: center;
@@ -157,7 +157,7 @@ text-align: center;
 }
 .pagination a {
     color: white;
-    font-family: tahoma;
+    font-family: Tahoma;
     background-color: #978A8A;
     float: left;
     padding: 8px 16px;
@@ -214,7 +214,7 @@ h5 {
 .accept {
     border: 1px solid red;
     background-color: white;
-    font-family: tahoma;
+    font-family: Tahoma;
     font-size: 14px;
     padding: 10px;
     margin-left: 10px;
@@ -242,7 +242,7 @@ h5 {
 .gallery {
     text-align: center;
     font-size: 16px;
-    font-family: tahoma;
+    font-family: Tahoma;
     color: #000;
     text-decoration: underline;
     text-shadow: 4px 4px 4px red;
@@ -265,7 +265,7 @@ h5 {
     display: block;
     color: white;
     font-size: 12px;
-    font-family: tahoma;
+    font-family: Tahoma;
     text-align: center;
     padding: 10px;
     text-decoration: none;   
@@ -307,20 +307,20 @@ h5 {
 .submitbtn {
     margin-left: 10px;
     margin-bottom: 10px;
-    font-family: tahoma;
+    font-family: Tahoma;
     font-size: 12px;
     border: 1px solid red;
     background-color: white;
 }
 a.upcominglinks {
-    font-family: tahoma;
+    font-family: Tahoma;
     margin-left: 10px;
 }
 .textarea {
     margin: 10px;
     width: 80%;
     border: 1px dotted black;
-    font-family: tahoma;
+    font-family: Tahoma;
     font-size: 12px;
 }
 
@@ -449,7 +449,7 @@ h6 {
                     display: block;
                     color: white;
                     font-size: 12px;
-                    font-family: tahoma;
+                    font-family: Tahoma;
                     text-align: center;
                     padding: 10px 15px;
                     padding-bottom: 25px;
